@@ -47,7 +47,7 @@ img{
 .container{
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 14px;
 }
 .flex-between{
   display: flex;
@@ -122,6 +122,7 @@ nav ul li a:hover::after{
   background-position: center;
   color: var(--white-color);
   overflow: hidden;
+  padding: 100px 0;
 }
 .banner-section::before {
   content: "";
@@ -145,7 +146,9 @@ nav ul li a:hover::after{
   color: var(--light-green);
 }
 .banner-text-area p{
+  width: calc(90% - 14px);
   margin-bottom: 25px;
+  line-height: 25px;
 }
 .trial-btn{
   padding: 10px 20px;
@@ -153,15 +156,16 @@ nav ul li a:hover::after{
   width: 245px;
   background-color: var(--light-gray);
   color: var(--header-color);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .trial-btn p{
+  
   margin-bottom: 0;
 }
 .trial-btn .lesthen-btn{
   padding: 5px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: var(--header-color);
   color: var(--light-gray);
   display: inline-flex;
@@ -175,9 +179,23 @@ nav ul li a:hover::after{
   font-size: 22px;
   color: var(--light-green);
 }
-.banner-img{
-  width: calc(45% - 40px);
+.trut-img{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .trut-img img{
-  width: 150px;
+  width: 120px;
+  object-fit: cover;
 }
+.banner-img{
+  width: calc(48% - 50px);
+}
+.banner-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+ /* Banner Section */
