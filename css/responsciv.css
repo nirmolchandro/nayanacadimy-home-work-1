@@ -69,6 +69,29 @@
   .our-services-box {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* about section  */
+  .about-wrapper {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-content {
+    flex: 1 1 45%;
+    width: 45%;
+  }
+  .section-label {
+    font-size: 20px;
+    
+  }
+  .section-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+
+  }
 }
 @media (max-width: 768px) {
   
@@ -115,6 +138,9 @@
     border-radius: 10px; 
   }
   /* services section */
+  .our-services-box{
+    padding: 40px 20px;
+  }
   .titel-section {
     width: 100%;
     padding: 0 15px; /* দুই পাশে ফাঁকা */
@@ -125,6 +151,32 @@
   .titel-section h2 {
     font-size: 26px;
     line-height: 1.4; /* পড়তে সহজ হবে */
+  }
+  /* about section */
+  .about-section{
+    padding: 40px 20px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-image {
+    flex: 1 1 80%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-content {
+    margin-top: 25px;
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .stats {
+    
+    align-items: center;
+    justify-content: center;
+
   }
 }
 @media (max-width: 575px){
