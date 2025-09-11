@@ -56,6 +56,19 @@
   .trut-img img {
     width: 90px;
   }
+  /* services section */
+  .titel-section {
+    width: 90%;   
+  }
+  .titel-section h5 {
+    font-size: 26px; 
+  }
+  .titel-section h2 {
+    font-size: 32px;
+  }
+  .our-services-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 768px) {
   
@@ -101,12 +114,21 @@
     object-fit: cover; 
     border-radius: 10px; 
   }
-}
-@media (max-width: 768px){
-  h2{
-    font-size: 32px;
+  /* services section */
+  .titel-section {
+    width: 100%;
+    padding: 0 15px; /* দুই পাশে ফাঁকা */
   }
-  p{
-    font-size: 16px
+  .titel-section h5 {
+    font-size: 22px;
+  }
+  .titel-section h2 {
+    font-size: 26px;
+    line-height: 1.4; /* পড়তে সহজ হবে */
+  }
+}
+@media (max-width: 575px){
+  .our-services-box {
+    grid-template-columns: 1fr;
   }
 }
