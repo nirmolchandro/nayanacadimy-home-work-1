@@ -357,3 +357,93 @@ nav ul li a:hover::after{
   justify-content: center;
   align-items: center;
 }
+.process-icon-box h4{
+  font-size: 30px;
+}
+/* resent section code start */
+/* Parent container styling */
+/* .resent-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  position: relative;
+} */
+.resent-parent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+.resent-contant h5 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resent-contant p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Stagger effect */
+.resent-child:nth-child(2),
+.resent-child:nth-child(4) {
+  margin-top: 80px;
+}
+.resent-free {
+  margin-bottom: 30px;
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.resent-free i {
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.resent-free:hover {
+  background-color: var(--light-green);
+}
+
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .resent-parent {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .resent-child:nth-child(2),
+  .resent-child:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .resent-contant h5 {
+    font-size: 18px;
+  }
+
+  .resent-contant p {
+    font-size: 15px;
+  }
+}
