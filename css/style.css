@@ -361,21 +361,12 @@ nav ul li a:hover::after{
   font-size: 30px;
 }
 /* resent section code start */
-/* Parent container styling */
-/* .resent-parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  position: relative;
-} */
 .resent-parent{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 40px;
 }
-
-
 .resent-contant h5 {
   font-size: 20px;
   color: #333;
@@ -446,4 +437,50 @@ nav ul li a:hover::after{
   .resent-contant p {
     font-size: 15px;
   }
+}
+.testimonial-contant{
+  background: var(--light-gray);
+  text-align: center;
+  padding: 45px;
+}
+.testi-img{
+  width: 150px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.este-contant{
+  margin-top: 35px;
+}
+.este-contant h6{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.este-contant .client-name{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.slid-btn{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto 0;
+
+}
+.slid-btn button{
+  padding: 15px;
+  border-radius: 50%;
+  background: var(--header-color);
+  color: var(--light-gray);
+  border: 1px solid #1A1C1C;
+  transition: 0.7s;
+}
+.slid-btn button:hover{
+  background: transparent;
+  color: var(--black-color);
 }
